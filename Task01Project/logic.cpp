@@ -6,6 +6,16 @@
 // значений элементов вектора.
 #include "logic.h"
 int count_nonzero_elements(int array[DEFAULT_SIZE], int size) {
-	
-	return 0;
+	if (size < 1) {
+		return -1;
+	}
+
+	int count = 0;
+	for (int index = 0; index < size; index++)
+	{
+		if (array[index] != 0) {
+			count++;
+		}
+	}
+	return count;
 }
