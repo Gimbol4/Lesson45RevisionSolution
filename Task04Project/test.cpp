@@ -29,7 +29,7 @@ void print(int array[DEFAULT_SIZE], int expected[DEFAULT_SIZE], int size, string
 
 	if (size > 0) {
 		cout << "Array before:\t" << convert(array, size) << endl;
-		cout << "Array after:\t" << convert(array, size) << endl;
+		cout << "Array after:\t" << convert(expected, size) << endl;
 	}
 
 	cout << "----------------------------------------------------" << endl;
